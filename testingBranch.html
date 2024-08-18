@@ -4,11 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="fonts-6/css/all.css" />
+    <link rel="stylesheet" href="fonts-6/css/all.min.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        color: aliceblue;
+        background: #000;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      nav .navs a,
+      .side-navs a {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .navs {
+        gap: 15px;
+        display: flex;
+      }
+      .navs li,
+      .side-navs li {
+        list-style: none;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        inset: 0 0 0 auto;
+        background: #000;
+        width: 500px;
+        color: aliceblue;
+      }
+    </style>
   </head>
   <body>
+    <nav>
+      <h2>developer</h2>
+      <div class="navs">
+        <li><a href="#">home</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">login</a></li>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <h2>developer</h2>
+      <div class="side-navs">
+        <li><a href="#">home</a></li>
+        <li><a href="#">menu</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">login</a></li>
+        <li><a href="#">sign up</a></li>
+      </div>
+    </div>
     <h1>
       this is a new file in the root directory of the swag-spot however, it does
       not affect the main project
     </h1>
+    <i class="fa fa-bars"></i>
   </body>
 </html>
