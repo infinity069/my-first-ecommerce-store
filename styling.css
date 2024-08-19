@@ -1072,6 +1072,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: auto 30px;
+    align-items: center;
 }
 .filter-button {
     display: flex;
@@ -1083,6 +1084,11 @@ nav {
     color: gray;
     font-weight: 700;
     border:  none;
+}
+@media screen and (max-width: 500px) {
+    .filter h3, .filter-button button {
+        font-size: 1em;
+    }
 }
 .product-card {
     display: block;
